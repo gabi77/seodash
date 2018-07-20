@@ -7,13 +7,19 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class SeodashIndexController extends Controller
 {
-    /**
-     * @Route("/seodash/index", name="seodash_index")
+   /**
+     * @Route("/", name="index")
      */
     public function index()
     {
-        return $this->render('seodash_index/index.html.twig', [
-            'controller_name' => 'SeodashIndexController',
-        ]);
+        return $this->render('Seodash/index.html.twig');
+    }
+ 
+    /**
+     * @Route("/admin", name="admin")
+     */
+    public function admin()
+    {
+        return $this->render('Seodash/Admin/index.html.twig');
     }
 }
