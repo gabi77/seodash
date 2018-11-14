@@ -20,6 +20,6 @@ class SeodashIndexController extends Controller
      */
     public function admin()
     {
-        return $this->render('Seodash/Admin/index.html.twig');
+        return $this->render('Seodash/index.html.twig');
     }
 }

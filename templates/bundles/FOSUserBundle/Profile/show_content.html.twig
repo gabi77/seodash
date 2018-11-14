@@ -1,0 +1,24 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div id="content" class="content">
+    <div class="row fos_user_user_show">
+        <div class="col-lg-8 col-xlg-9 col-md-7 center">
+            <div class="card">
+                <div class="card-block">
+                    <center class="m-t-30"><img src="{{ asset('images/user/user-13.jpg') }}" class="img-circle"
+                                                width="150"/>
+                        <br/><br/><br/>
+                        <h4 class="card-title m-t-10">User name: {{ user.username }}</h4>
+                        <br>
+                        <h4 class="card-title m-t-10">Email : {{ user.email }}</h4>
+                        <br>
+                        <button type="button" class="btn btn-primary" href="{{ path('fos_user_profile_edit') }}"> Edit
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+#}
+</script>

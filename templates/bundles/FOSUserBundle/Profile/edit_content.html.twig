@@ -1,0 +1,47 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div id="content" class="content">
+    <div class=" row fos_user_user_show">
+        <div class="col-lg-8 col-xlg-9 col-md-7 center">
+            <div class="card">
+                <div class="card-block">
+                    <center class="m-t-30"><img src="{{ asset('images/user/user-13.jpg') }}" class="img-circle"
+                                                width="150"/>
+                    </center>
+                    {{ form_start(form, {'action': path('fos_user_profile_edit'), 'attr': {'class': 'fos_user_profile_edit margin-bottom-0 form-horizontal form-material'}}) }}
+
+                    <div class="form-group">
+                        <label class="col-md-12">User Name</label>
+                        <div class="col-md-12">
+                            {{ form_widget(form.username, { 'attr': {'class': 'form-control', 'placeholder': 'form.username'|trans } }) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="example-email" class="col-md-12">Email</label>
+                        <div class="col-md-12">
+                            {{ form_widget(form.email, { 'attr': {'class': 'form-control form-control-line', 'placeholder': 'form.email'|trans } }) }}
+                            {{ form_errors(form.email) }}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-12">Password</label>
+                        <div class="col-md-12">
+                            {{ form_widget(form.current_password, { 'attr': {'class': 'form-control form-control-line', 'placeholder': 'form.current_password'|trans } }) }}
+                        </div>
+                    </div>
+
+                    {{ form_widget(form) }}
+
+                    <br>
+                    <div class="form-group ">
+                        <div class="col-lg-5 center">
+                            <button type="submit" class="btn btn-success btn-lg" id="_submit"
+                                    name="_submit">{{ 'profile.edit.submit'|trans }}</button>
+                        </div>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+{% extends "@FOSUser/layout.html.twig" %}
+{% set bodycss = "pace-top" %}
+{% set bodystyle = "background-image: url(images/login-bg/login-bg-17.jpg)" %}
+{% block body %}
+    {% block fos_user_content %}
+        {{ include('@FOSUser/Security/login_content.html.twig') }}
+    {% endblock fos_user_content %}
+{% endblock %}
