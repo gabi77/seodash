@@ -26,7 +26,8 @@
         "symfony/web-link": "*",
         "symfony/webpack-encore-pack": "^1.0",
         "symfony/yaml": "*",
-        "doctrine/doctrine-fixtures-bundle": "~2.2"
+        "doctrine/doctrine-fixtures-bundle": "~2.2",
+        "symfony/translation": "v4.2.4"
     },
     "require-dev": {
         "sensiolabs/security-checker": "^4.1",
