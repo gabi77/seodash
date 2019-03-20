@@ -23,5 +23,5 @@ yarn-error.log
 
 
 ###> Docker ignore file ###
-.docker/data/db/
+.docker/data/db/*
 ###< Docker ignore file ###
