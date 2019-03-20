@@ -31,9 +31,6 @@ services:
           - .:/home/wwwroot/seodash2
         environment:
           - maildev_host=seodash_maildev
-        depends_on:
-          - maildev
-          - mysql
 
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
@@ -46,8 +43,8 @@ services:
         links:
             - mysql
 
-    maildev:
-        image: djfarrelly/maildev
-        container_name: seodash_maildev
-        ports:
-          - 8001:80
+    # maildev:
+    #     image: djfarrelly/maildev
+    #     container_name: seodash_maildev
+    #     ports:
+    #       - 8001:80
